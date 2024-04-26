@@ -129,3 +129,71 @@ Terminal
     
     
 # DS-lab
+
+# Netbeans Steps: 
+If netbeans version 8, Java 8
+If version 16+, Java 11
+
+
+Create project
+Java - web application
+Server - glass fish server
+Frameworks - none
+Finish 
+
+Right click on project New 
+Webservice 
+Package name 
+
+Right click on service 
+Add operation 
+Return type double
+Select Parameters 
+add name and double
+
+Inside created operation
+Replace return value
+
+Right click on project
+Build
+Then deploy 
+
+Test operation 
+
+New project 
+Same steps
+
+Drag form from pallete into body of index.html
+Insert Form Action: CalculatorServelet 
+
+Input fields drag/ add (type, name, value)
+Last <input type=“submit”, value=“Submit”>
+
+Right click on 2nd project
+New
+Web Service Client 
+Select web service of previous project
+Package default
+
+Right click on second peoject
+New
+Servelet 
+Note: same name as the form action name
+Add description checkbox tick
+
+Add all methods from first project in the second project by dragging from newly created web service reference folder 
+
+In the response fields 
+Add following
+
+double num1, num2;
+num1 = Double.parseDouble(request.getParameter(“number1”));
+Same for num2
+
+Add inside body tag
+addition(num1, num2)
+
+Clean and build
+
+Run first form file
+Add css if needed
